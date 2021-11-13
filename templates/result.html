@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+
+    <link rel="stylesheet" href="../static/css/base.css">
+    <link rel="stylesheet" href="../static/css/vendor.css">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <style>
+        .result-logo {
+            z-index: 502;
+            display: block;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            right: 60px;
+            top: 36px;
+        }
+
+        .result-logo a {
+            display: block;
+            margin: 0;
+            padding: 0;
+            outline: 0;
+            border: none;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .result-logo img {
+            width: 100px;
+            height: 25px;
+        }
+
+        @media only screen and (max-width:1400px) {
+            .result-logo {
+                right: 35px;
+            }
+        }
+
+        @media only screen and (max-width:400px) {
+
+            .result-logo {
+                left: 30px;
+            }
+
+            .result-logo img {
+                width: 95px;
+                height: 24px;
+            }
+        }
+    </style>
+
+</head>
+
+<body style="background-color: black;">
+    <div class="home-content__clock" style="margin-top: 0px; color: white; margin-left: 50px; font-size: larger;">
+        <h2 style="color: aliceblue; margin-top: 25px;">Result</h2>
+    </div>
+
+    <div class="result-logo">
+        <a href="#">
+            <img src="../static/images/logo.png" alt="" style="width:50px; height: 40px;">
+        </a>
+    </div>
+    <center>
+        <!-- <a href="{% url 'home' %}">Home</a> <br><br> -->
+        <div class="home-content__subscribe">
+            <div class="group">
+                <button onclick="document.location='{% url 'home' %}'"
+                    style="background-color: #ec008c; border-color: #ec008c; color: white;"> Home
+                </button><br><br>
+            </div>
+        </div>
+        <img src="../static/input/image.jpg" alt="">
+
+        <h1 style="color: white;">{{a}}</h1>
+
+        <h1 style="color: white;">{{b}}</h1>
+
+
+    </center>
+
+    <div class="row home-copyright">
+        <span>Copyright 2021</span>
+        <span>Design by <a href="">Object Tracking</a></span>
+    </div>
+</body>
+<!-- style="width: 600px; height: 400px;" -->
+
+</html>
