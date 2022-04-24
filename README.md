@@ -59,3 +59,6 @@ pip install -r requirements.txt
 ```shell
 python manage.py runserver
 ```
+
+## PPT:
+[Object Tracking PPT](https://docs.google.com/presentation/d/1lq-YmyZKEFd9tC55SrdnQGEMTksWapjr7gqUUIYHV9M/edit?usp=sharing)
